@@ -1,0 +1,20 @@
+const { query } = require("express");
+const make_api_call = require("../request/helperAPI");
+
+async function fetchVideos (req, res) { //req from the http, res is the http response
+    let skillLevel = req.query.skillLevel;
+    let vids = await make_api_call('http://localhost:3000/danceVideos')
+    // let danceVids = [];
+    // for (skill of vids) {
+    //     if (skill==skillLevel) {
+    //         danceVids.push();
+    //     }
+    //     return danceVids;
+    // }
+    res.json(vids) // publicise the json file
+    }
+
+
+module.exports = {
+    fetchVideos
+} // exports router information to danceRouter
