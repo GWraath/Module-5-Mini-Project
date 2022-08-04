@@ -19,19 +19,32 @@
     ],
     "paths": {
         "/danceRoute/getVideos": {
-        "get": {
-        "tags": [
-        "Receives the videos from the JSON server"
-        ],
-        "responses": {
-            "200": {
-                "description": "JSON containing videos and descriptors"
+            "get": {
+                "tags": [
+                    "Receives the videos from the JSON server"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON containing videos and descriptors"
+                    }
+                }
+            }
+        },
+        "/danceRoute/addVideo": {
+            "post": {
+                "tags": [
+                    "Adds a new video to the JSON server"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON containing videos and descriptors"
+                    }
+                }
             }
         }
-    }
-    },
+    },        
     "schemes": ["http"],
     "consumes": ["application/json"],
     "produces": ["application/json"]
-    }
+    
 }
