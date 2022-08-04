@@ -1,6 +1,6 @@
 //why are these functions in a script file instead of a controller or library 
 //like the calculator? - logic is populating HTML with content, can't do that from a controller unless using a template engine
-//Why arent these functions in classes?
+//Why arent these functions in classes? jo: you could do that, it's just a different way of structuring code
 
 let skillLevel = 'beginner'
 
@@ -70,7 +70,7 @@ async function addVideoTo() {
     let x = document.getElementById('videoTitle').value; //gets the inputted dance title
     let y = document.getElementById('videoDescription').value;    //gets the inputted description
     let beginn1={source: z,title: x, description: y, skill: w};
-    await postData('http://localhost:3000/danceVideos', beginn1)
+    await postData('http://localhost:4000/danceRoute/addVideo', beginn1) //now posting to the express server on port 4000 via routes!
     .then((data) => {
         console.log(data); // JSON data parsed by `data.json()` call
     }).catch (

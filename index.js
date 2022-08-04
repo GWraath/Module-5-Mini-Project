@@ -14,7 +14,7 @@ app.use('/api-docs',
 
 
 app.use('/', express.static('public'))
-
+app.use(express.json());
 app.use('/danceRoute', danceRoute)
 
 app.listen(port, () => {

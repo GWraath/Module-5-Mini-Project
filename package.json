@@ -15,5 +15,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSconer/Module-5-Mini-Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GSconer/Module-5-Mini-Project/issues"
+  },
+  "homepage": "https://github.com/GSconer/Module-5-Mini-Project#readme",
   "description": ""
 }
